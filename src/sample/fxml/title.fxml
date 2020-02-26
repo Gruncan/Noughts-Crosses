@@ -1,0 +1,38 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<BorderPane fx:controller="sample.ControllerTitle"
+      xmlns:fx="http://javafx.com/fxml" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 70, 0, 0, 0);">
+
+    <top>
+        <VBox minHeight="75" minWidth="500"/>
+
+    </top>
+    <bottom>
+        <VBox minHeight="75"/>
+    </bottom>
+    <center>
+        <VBox minWidth="300" minHeight="300" alignment="CENTER" spacing="30" style="-fx-padding: 25; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 70, 0, 0, 0); ">
+            <Label text="Noughts and Crosses" style="-fx-font-size: 30;" underline="true"/>
+
+            <Button text="One Player" fx:id="onePlayer" styleClass="button" onAction="#buttonClick"/>
+
+            <Button text="Two Player" fx:id="twoPlayer" styleClass="button" onAction="#buttonClick"/>
+
+
+            <Label text="That is not available at the moment" fx:id="notAvailable" style="-fx-font-size: 15; -fx-text-fill: Red" visible="false"/>
+        </VBox>
+
+    </center>
+    <left>
+        <VBox minWidth="75"/>
+    </left>
+    <right>
+        <VBox minWidth="75"/>
+    </right>
+
+
+
+
+</BorderPane>

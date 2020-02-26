@@ -1,0 +1,17 @@
+.button{
+  -fx-border-color:  #000000;
+  -fx-background-color: #a9a9a9;
+  -fx-border-width: 2;
+  -fx-font-size: 30;
+  -fx-padding: 10;
+  -fx-margin: 20;
+  -fx-opacity: 0.8;
+}
+
+.button:hover{
+    -fx-opacity: 1;
+    -fx-border-color: #11e95b;
+    -fx-background-color: #d4d3d3;
+}
+
+

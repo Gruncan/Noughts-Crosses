@@ -1,0 +1,83 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<BorderPane fx:controller="sample.ControllerMain"
+            xmlns:fx="http://javafx.com/fxml">
+
+
+    <center>
+        <VBox minWidth="300" minHeight="300" style="-fx-border-color: black " >
+            <GridPane minWidth="300" minHeight="300" style="-fx-padding: 25; -fx-background-color: #d3d3d3; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 70, 0, 0, 0); -fx-border-radius: 10px">
+                <Button minWidth="100" minHeight="100" styleClass="boxes" fx:id="b1"
+                        text=" "  onAction="#buttonClicked" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+                <Button minWidth="100" minHeight="100"
+                        styleClass="boxes" fx:id="b2"
+                        text=" " onAction="#buttonClicked" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                <Button minWidth="100" minHeight="100"
+                        styleClass="boxes" fx:id="b3"
+                        text=" " onAction="#buttonClicked" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+
+                <Button minWidth="100" minHeight="100"
+                        styleClass="boxes" fx:id="b4"
+                        text=" " onAction="#buttonClicked" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+                <Button minWidth="100" minHeight="100"
+                        styleClass="boxes" fx:id="b5"
+                        text=" " onAction="#buttonClicked" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                <Button minWidth="100" minHeight="100"
+                        styleClass="boxes" fx:id="b6"
+                        text=" " onAction="#buttonClicked" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+
+                <Button minWidth="100" minHeight="100"
+                        styleClass="boxes" fx:id="b7"
+                        text=" " onAction="#buttonClicked" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+                <Button minWidth="100" minHeight="100"
+                        styleClass="boxes" fx:id="b8"
+                        text=" " onAction="#buttonClicked" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                <Button minWidth="100" minHeight="100"
+                        styleClass="boxes" fx:id="b9"
+                        text=" " onAction="#buttonClicked" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+
+            </GridPane>
+        </VBox>
+    </center>
+
+    <top>
+        <VBox alignment="CENTER" minHeight="75" minWidth="500">
+            <Label fx:id="turn" text="Turn : Player 1 (⭕)" style="-fx-font-size: 20; -fx-alignment: center"/>
+        </VBox>
+    </top>
+
+    <bottom>
+        <VBox alignment="CENTER" minHeight="75">
+            <Label  fx:id="winner" text=" " style="-fx-font-size: 20; -fx-alignment: center"/>
+            <Button text="Back" onAction="#sceneTitle" style="-fx-font-size: 15"/>
+        </VBox>
+</bottom>
+
+    <left>
+        <VBox minWidth="75">
+
+        </VBox>
+    </left>
+
+    <right>
+        <VBox minWidth="75">
+
+        </VBox>
+    </right>
+
+
+</BorderPane>
